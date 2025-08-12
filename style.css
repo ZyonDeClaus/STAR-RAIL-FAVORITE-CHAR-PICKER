@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #0d0d0d;
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+.card {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card-name {
+  padding: 8px;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.favorite {
+  border: 3px solid gold;
+}
+
+.favorite-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 20px;
+  color: gold;
+  display: none;
+}
+
+.favorite .favorite-icon {
+  display: block;
+}
